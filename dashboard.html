@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/924738978d.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <!-- ------------------------ NavBar------------------------ -->
+    <nav class="sideNav">
+        <div class="profileContainer">
+            <img id="profilePicture" src="assets/me.png" alt="profile-picture">
+            <span id="profileName">Effi Bello</span>
+            <span id="profileTitle">Helfy Candidate <i id="profileDropdown" class="fa fa-caret-down" aria-hidden="true"></i>
+            </span>
+        </div>
+
+        <ul class="navOptions">
+            <li class="navOption-activated">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i class="fa-solid "></i>
+                            <i id="navOptionIcon" class="fa fa-th-large" aria-hidden="true"></i>
+                            <span class="navOptionTitle">Dashboard</span>
+                    </div>
+                    <i id="navOptionDropdown" class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <ul class="navOptionData">
+                    <li> Dashboard v.1</li>
+                    <li id="pickedData"> Dashboard v.2</li>
+                    <li> Dashboard v.3</li>
+                    <li> Dashboard v.4</li>
+                    <li> Dashboard v.5</li>
+                </ul>
+            </li> 
+
+            <li class="navOption">
+                <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-diamond" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Layouts</span>
+                </div>
+            </li> 
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Graphs</span>
+                    </div>
+                        <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </li> 
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Mailbox</span>
+                    </div>
+                    <div class="notificationLabelOrange">
+                        <span id="notificationLabelText">16/24</span>
+                    </div>
+                </div>
+            </li> 
+
+            <li class="navOption">
+                <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-pie-chart" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Metrics</span>
+                </div>
+            </li> 
+            
+            <li class="navOption">
+                <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-flask" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Widgets</span>
+                </div>
+            </li> 
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Forms</span>
+                    </div>
+                        <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </li> 
+            
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <span class="navOptionTitle">App views</span>
+                    </div>
+                    <div class="notificationLabelGreen">
+                        <span id="notificationLabelText">SPECIAL</span>
+                    </div>
+                </div>
+            
+            </li> 
+            <li class="navOption">
+                <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-files-o" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Other Pages</span>
+                </div>
+            </li> 
+            
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-globe" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Miscellaneous</span>
+                    </div>
+                    <div class="notificationLabelLightBlue">
+                        <span id="notificationLabelText">NEW</span>
+                    </div>
+                </div>
+                
+            </li> 
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-flask" aria-hidden="true"></i>
+                        <span class="navOptionTitle">UI Elements</span>
+                    </div>
+                    <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+                
+            </li>
+
+            <li class="navOption">
+                <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-laptop" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Grid Options</span>
+                </div>
+            </li>
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-th" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Tables</span>
+                    </div>
+                    <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </li>
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+
+                </div>
+                <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="navOptionTitle">E-commerce</span>
+                        <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </li>
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-picture-o" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Gallery</span>
+                    </div>
+                    <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </li>
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                            <i id="navOptionIcon" class="fa fa-sitemap" aria-hidden="true"></i>
+                            <span class="navOptionTitle">Menu levels</span>
+                    </div>
+                    <i id="navOptionDropdown" class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </li>
+
+            <li class="navOption">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                            <i id="navOptionIcon" class="fa fa-pencil" aria-hidden="true"></i>
+                            <span class="navOptionTitle">Animations</span>
+                    </div>
+                    <div class="notificationLabelLightBlue">
+                        <span id="notificationLabelText">62</span>
+                    </div>
+                </div>
+            </li> 
+
+            <li class="navOption-new">
+                <div class="navOptionContainer">
+                    <div class="navOptionTitleContainer">
+                        <i id="navOptionIcon" class="fa fa-star" aria-hidden="true"></i>
+                        <span class="navOptionTitle">Landing Page</span>
+                    </div>
+                    <div class="notificationLabelWhite">
+                        <span id="notificationLabelTextNew">NEW</span>
+                    </div>
+                </div>
+            </li> 
+        </ul>
+    </nav>
+    <!-- ------------------------ NavBar------------------------ -->
+
+
+</body>
+</html>
