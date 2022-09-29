@@ -9,17 +9,33 @@
     --notification-green:rgb(26,179,148);
     --notification-red:rgb(237,85,101);
     --notification-orange:rgb(248,172,89);
+    --data-title:rgb(120, 120, 120);
 }
 
 body{
-    margin: 0;
+    padding: 20px 0px 0 200px;
     background-color: var(--body-bg);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+
+.bodyContainerCols{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 .sideNav{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 200px;
     background-color: var(--navbar-bg);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: var(--navbar-maintext);
@@ -110,7 +126,7 @@ ul,li{
 #navOptionDropdown{
     font-size: 8px;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 
@@ -137,7 +153,7 @@ ul,li{
     color: white;
     padding: 2px 8px 2px 8px;
     border-radius: 2px;
-    margin-right: 15px;
+    margin-right: 20px;
     
 }
 .notificationLabelOrange{background-color: var(--notification-orange)}
@@ -157,6 +173,183 @@ ul,li{
     font-size: 10px;
     color: var(--notification-green);
 }
+
+.firstRowData{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.firstRowDataContainer{
+    
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0px -1px 2px rgb(223, 223, 223);
+}
+
+.titlesContainer{
+    display: flex;
+    padding: 15px 5px 15px 0px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    width: 100%;
+    margin-left: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.title{
+    font-size: 14px;
+    color:var(--data-title);
+    font-weight: 550;
+}
+
+.amount{
+    margin-top: 10px;
+    margin-left: 15px;
+    color:var(--data-title);
+    font-size: 26px;
+    margin-bottom: -10px;
+    font-weight: 400;
+}
+
+.footersContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px ;
+    font-size: 10px;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.footerTitle{
+    color: var(--data-title);
+}
+
+.footerNumber{
+    color: var(--data-title);
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.footerNumberBlue{
+    color: var(--notification-blue);
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.footerNumberLightBlue{
+    color: var(--notification-lightblue);
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.footerNumberRed{
+    color: var(--notification-red);
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.footerNumberGreen{
+    color: var(--notification-green);
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.secondRowData{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 96%;
+    margin-left: 25px;
+    margin-top: 10px;
+    justify-content: space-between;
+    /* padding-right: 18px; */
+    box-shadow: 0px -1px 2px rgb(223, 223, 223);
+    
+}
+
+.btn-group{
+    margin-right: 25px;
+}
+
+
+#ordersGraph{
+    width: 70%;
+    margin-left: 5px;
+    object-fit: contain;
+}
+.orderGraphsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.scalesContainers{
+    width: 100%;
+}
+
+.scalesContainer{
+    /* background: purple; */
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+
+.scale48,.scale60,.scale20{
+    border-radius: 5px;
+    height: 5px;
+    background-color: var(--notification-green);
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+.scale48{
+    width: 48%;
+}
+
+.scale60{
+    width: 60%;
+}
+
+.scale20{
+    width: 20%;
+}
+
+
+.btn-group button {
+    background-color: transparent; 
+    border: 1px solid rgb(230, 230, 230); 
+    color: var(--data-title); 
+    padding: 2px 4px; 
+    cursor: pointer; 
+    float: left; 
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; 
+}
+
+.btn-group button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-group button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn-group button:focus{
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+
+
 
 
 
