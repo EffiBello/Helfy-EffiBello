@@ -569,9 +569,7 @@ ul,li{
 .thirdRowRightSectionContainer{
     display: flex;
     flex-direction: column;
-    width: 100%;
-   
-    
+    width: 98%;
 }
 
 .tableAndTransactionsContainer{
@@ -581,7 +579,6 @@ ul,li{
     justify-content: space-between;
     align-items: center;
 }
-
 
 
 #transactionsGraph{
