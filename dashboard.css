@@ -13,7 +13,7 @@
 }
 
 body{
-    padding: 20px 0px 0 200px;
+    padding: 20px 0px 50px 200px;
     background-color: var(--body-bg);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -39,7 +39,7 @@ body{
     font-size: 12px;
     font-weight: 500;
     color: var(--navbar-maintext);
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
 .profileContainer{
@@ -349,6 +349,7 @@ ul,li{
 .thirdRowData{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-self: center;
     align-items: flex-start;
     width: 96%;
@@ -360,16 +361,22 @@ ul,li{
     flex-direction: column;
     background-color: white;
     padding-bottom: 20px;
-    margin-right: 30px;
     box-shadow: 0px -1px 2px rgb(223, 223, 223);
 }
 
 #messagesContainer{
-    width: 33%;
+    width: 40%;
 }
 
-#userProjectListContainer{
-    width: 40%;
+#userProjectListContainer,#todoListContainer{
+    width: 48%;
+}
+
+#transactionWorldwideContainer{
+    
+    margin-top: 25px;
+    width: 95.6%;
+    align-self: flex-end;
 }
 
 .icon-group{
@@ -459,6 +466,7 @@ ul,li{
 .flexTable{
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
 }
 
@@ -488,21 +496,133 @@ ul,li{
     margin-top: 10px;
     margin-left: 10px;
     color: #6a6a6a;
+    /* background-color: red; */
 }
 
-.flexTableRow span{
+.flexTableRow #tableText,.flexTableRow .footerNumberGreen{
     font-size: 12px;
-    width: 15%;
-    font-weight: 50;
+    font-weight: 500;
+    width: 50px;
+    margin: 0;
+}
+
+.flexTableRow .notificationLabelOrange, .flexTableRow .notificationLabelGreen{
+    margin-right: -10;
+    width: 50px;
+    padding: 4px;
+    font-size: 10px;
+}
+
+.todoRowsContainer{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todoRow{
+    background-color: rgb(243,243,243);
+    width: 85%;
+    align-self: center;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.todoRow .notificationLabelGreen{
+    margin-left: 10px;
+    width: 50px;
+    padding: 4px 2px;
+    font-size: 8px;
+}
+
+.todoRow .notificationLabelGreen i{
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.todoCheckbox{
+    margin-right: 10px;
+    accent-color: white;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.checkedTask{
+    text-decoration: line-through;
+}
+
+.userProjectAndTodoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    /* background-color: blue; */
+}
+
+.thirdRowRightSectionContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+}
+
+.tableAndTransactionsContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#transactionsGraph{
+    width: 50%;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+.tableAndTransactionsContainer .flexTable{
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.tableAndTransactionsContainer .flexTableColumns{
+    justify-content: space-around;
     margin-left: 0px;
 }
 
-
-.flexTableRow .notificationLabelOrange, .flexTableRow .notificationLabelGreen{
-    margin-right: -15px;
-    margin-left: -15px;
-    transform: scale(0.7);
+.tableAndTransactionsContainer .flexTableRow{
+    justify-content: space-evenly;
+    margin-left: 5px;
+    /* background-color: red; */
+    width: 110%;
 }
+
+
+.tableAndTransactionsContainer .flexTableRow :nth-child(2){
+    min-width: 100px;
+}
+
+.tableAndTransactionsContainer .flexTableRow :nth-child(3){
+    min-width: 70px;
+}
+
+.tableAndTransactionsContainer .notificationLabelGreen, .tableAndTransactionsContainer .notificationLabelOrange{
+    margin-right: 100px;
+    
+}
+
 
 
 
