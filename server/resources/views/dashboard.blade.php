@@ -355,7 +355,9 @@
                             <i class="fa fa-envelope-o"></i>
                             <p>New messages</p>
                         </div>
-                        <span class="footerTitle">You have 22 new messages and 16 waiting in draft folder</span>
+                        <div class="newMessagesNotificationSubtitle">
+                            <span class="footerTitle">You have 22 new messages and 16 waiting in draft folder</span>
+                        </div>
                     </div>
 
                     <!-- Rendering messages from helfy_db -->
@@ -399,7 +401,10 @@
         
                                 <div class="flexTableRow">
                                     <span id="tableText"> Pending...</span>
-                                    <span id="tableText"> 11:20pm</span>
+                                    <div class="dateContainer">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span id="tableText"> 11:20pm</span>
+                                    </div>
                                     <span id="tableText"> Samantha</span>
                                     <div class="footerNumberGreen">
                                         <i class="fa fa-level-up" aria-hidden="true"></i>
@@ -409,7 +414,10 @@
         
                                 <div class="flexTableRow">
                                     <div class="notificationLabelOrange">Canceled</div>
-                                    <span id="tableText">10:40am</span>
+                                    <div class="dateContainer">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span id="tableText"> 10:40pm</span>
+                                    </div>
                                     <span id="tableText">Monica</span>
                                     <div class="footerNumberGreen">
                                         <i class="fa fa-level-up" aria-hidden="true"></i>
@@ -419,7 +427,10 @@
         
                                 <div class="flexTableRow">
                                     <span id="tableText">Pending...</span>
-                                    <span id="tableText">01:30pm</span>
+                                    <div class="dateContainer">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span id="tableText"> 01:30am</span>
+                                    </div>
                                     <span id="tableText">John</span>
                                     <div class="footerNumberGreen">
                                         <i class="fa fa-level-up" aria-hidden="true"></i>
@@ -429,7 +440,10 @@
                                 
                                 <div class="flexTableRow">
                                     <span id="tableText"> Pending...</span>
-                                    <span id="tableText"> 02:20pm</span>
+                                    <div class="dateContainer">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span id="tableText"> 02:20pm</span>
+                                    </div>
                                     <span id="tableText"> Agnes</span>
                                     <div class="footerNumberGreen">
                                         <i class="fa fa-level-up" aria-hidden="true"></i>
@@ -439,7 +453,10 @@
         
                                 <div class="flexTableRow">
                                     <div class="notificationLabelGreen">Completed</div>
-                                    <span id="tableText"> 04:10am</span>
+                                    <div class="dateContainer">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span id="tableText"> 04:10am</span>
+                                    </div>
                                     <span id="tableText"> Amelia</span>
                                     <div class="footerNumberGreen">
                                         <i class="fa fa-level-up" aria-hidden="true"></i>
@@ -449,14 +466,17 @@
         
                                 <div class="flexTableRow">
                                     <span id="tableText"> Pending</span>
-                                    <span id="tableText"> 12:08pm</span>
+                                    <div class="dateContainer">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        <span id="tableText"> 12:08pm</span>
+                                    </div>
                                     <span id="tableText"> Damian</span>
                                     <div class="footerNumberGreen">
                                         <i class="fa fa-level-up" aria-hidden="true"></i>
                                         <span>23%</span>
                                     </div>
                                 </div>
-                            </div>                  
+                            </div>   
                         </div>
         
                             <!-- #TodoList -->
@@ -522,63 +542,73 @@
                         </div>
 
                         <div class="tableAndTransactionsContainer">
-                            <div class="flexTable">
-                                    <div class="flexTableColumns">
-                                        <span class="columnTitle">No.</span>
-                                        <span class="columnTitle">Transaction</span>
-                                        <span class="columnTitle">Date</span>
-                                        <span class="columnTitle">Amount</span>
-                                    </div>
+                                <table>
+                                    <tr id="columns">
+                                        <th >No.</th>
+                                        <th >Transaction</th>
+                                        <th >Date</th>
+                                        <th >Amount</th>
+                                    </tr>
             
-                                    <div class="flexTableRow">
-                                        <span id="tableText"> 1</span>
-                                        <span id="tableText"> Security doors</span>
-                                        <span id="tableText"> 16 june 2014</span>
-                                        <div class="notificationLabelGreen">$483.00</div>
-                                    </div>
+                                    <tr class="flexTableRow">
+                                        <td id=""> 1</td>
+                                        <td id=""> Security doors</td>
+                                        <td id=""> 16 june 2014</td>
+                                        <td>
+                                            <div class="notificationLabelGreen">$483.00</div>
+                                        </td>
+                                    </tr>
             
-                                    <div class="flexTableRow">
-                                        <span id="tableText"> 2 </span>
-                                        <span id="tableText">Wardrobes</span>
-                                        <span id="tableText">10 june 2014</span>
-                                        <div class="notificationLabelGreen">$327.00</div>
-                                    </div>
+                                    <tr class="flexTableRow">
+                                        <td id=""> 2 </td>
+                                        <td id="">Wardrobes</td>
+                                        <td id="">10 june 2014</td>
+                                        <td>
+                                            <div class="notificationLabelGreen">$327.00</div>
+                                        </td>
+                                    </tr>
             
-                                    <div class="flexTableRow">
-                                        <span id="tableText"> 3 </span>
-                                        <span id="tableText">Set of tools</span>
-                                        <span id="tableText">12 june 2014</span>
-                                        <div class="notificationLabelOrange">$125.00</div>
-                                    </div>
+                                    <tr class="flexTableRow">
+                                        <td id=""> 3 </td>
+                                        <td id="">Set of tools</td>
+                                        <td id="">12 june 2014</td>
+                                        <td>
+                                            <div class="notificationLabelOrange">$125.00</div>
+                                        </td>
+                                    </tr>
                                     
-                                    <div class="flexTableRow">
-                                        <span id="tableText"> 4 </span>
-                                        <span id="tableText">Panoramic pictures</span>
-                                        <span id="tableText">22 june 2013</span>
-                                        <div class="notificationLabelGreen">$344.00</div>
-                                    </div>
+                                    <tr class="flexTableRow">
+                                        <td id=""> 4 </td>
+                                        <td id="">Panoramic pictures</td>
+                                        <td id="">22 june 2013</td>
+                                        <td>
+                                            <div class="notificationLabelGreen">$344.00</div>
+                                        </td>
+                                    </tr>
             
-                                    <div class="flexTableRow">
-                                        <span id="tableText"> 5 </span>
-                                        <span id="tableText">Phones</span>
-                                        <span id="tableText">24 june 2013</span>
-                                        <div class="notificationLabelGreen">$235.00</div>
-                                    </div>
+                                    <tr class="flexTableRow">
+                                        <td id=""> 5 </td>
+                                        <td id="">Phones</td>
+                                        <td id="">24 june 2013</td>
+                                        <td>
+                                            <div class="notificationLabelGreen">$235.00</div>
+                                        </td>
+                                    </tr>
             
-                                    <div class="flexTableRow">
-                                        <span id="tableText"> 6 </span>
-                                        <span id="tableText">Monitors</span>
-                                        <span id="tableText">26 june 2013</span>
-                                        <div class="notificationLabelGreen">$100.00</div>
-                                    </div>
-                                </div>   
+                                    <tr class="flexTableRow">
+                                        <td id=""> 6 </td>
+                                        <td id="">Monitors</td>
+                                        <td id="">26 june 2013</td>
+                                        <td>
+                                            <div class="notificationLabelGreen">$100.00</div>
+                                        </td>
+                                    </tr>
+                                </table>   
                                 <img id="transactionsGraph" src="./assets/transactions-graph.png" alt="transactions-graph">
                             </div>
                         </div>
                     </div>
-                
                 </div>
-               
             </div>
    
 

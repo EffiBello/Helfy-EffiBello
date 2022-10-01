@@ -39,7 +39,7 @@ body{
     font-size: 12px;
     font-weight: 500;
     color: var(--navbar-maintext);
-    padding-bottom: 20%;
+    padding-bottom: 200px;
 }
 
 .profileContainer{
@@ -373,9 +373,8 @@ ul,li{
 }
 
 #transactionWorldwideContainer{
-    
     margin-top: 25px;
-    width: 95.6%;
+    width: 96%;
     align-self: flex-end;
 }
 
@@ -412,9 +411,13 @@ ul,li{
 }
 
 .newMessagesNotification .footerTitle{
-    margin-left: 18px;
     font-size: 10px;
     color: #6e6e6e;
+}
+
+.newMessagesNotificationSubtitle{
+    width: 90%;
+    margin-left: 15px;
 }
 
 .messageContainer{
@@ -427,7 +430,7 @@ ul,li{
 
 .messageContainer .titlesContainer{
     border: none;
-    margin-bottom: 2px
+    margin-bottom: 0px
 }
 
 .senderName{
@@ -447,7 +450,6 @@ ul,li{
     margin-right: 15px;
     font-size: 12px;
     font-weight: 550;
-    color: #6a6a6a;
 }
 
 .messageBodyText{
@@ -455,7 +457,7 @@ ul,li{
     color: #6e6e6e;
     margin-top: -10px;
     margin-bottom: 0;
-    max-width: 92%;
+    max-width: 95%;
 }
 
 .messageDate{
@@ -503,8 +505,25 @@ ul,li{
 .flexTableRow #tableText,.flexTableRow .footerNumberGreen{
     font-size: 12px;
     font-weight: 500;
+    width: 50px; 
+    margin:0
+}
+
+.dateContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
     width: 50px;
-    margin: 0;
+
+}
+
+.dateContainer i{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-right: 2px;
+    justify-content: space-between;
 }
 
 .flexTableRow .notificationLabelOrange, .flexTableRow .notificationLabelGreen{
@@ -579,37 +598,38 @@ ul,li{
     margin-top: 10px;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
 }
+
 
 
 #transactionsGraph{
-    width: 40%;
-    /* height: 200px; */
-    object-fit: cover;
+    width: 450px;
+    margin-right: 100px;
+    object-fit: contain;
 }
 
 
-.tableAndTransactionsContainer .flexTable{
+/* .tableAndTransactionsContainer .flexTable{
     align-items: center;
     justify-content: space-around;
     
-}
+} */
 
-.tableAndTransactionsContainer .flexTableColumns{
+/* .tableAndTransactionsContainer .flexTableColumns{
     justify-content: space-around;
     margin-left: 0px;
 }
 
-.tableAndTransactionsContainer .flexTableRow{
-    justify-content: space-between;
-    margin-left: 20px;
-    padding-left: 15px;
-    /* background-color: red; */
-    width: 90%;
-}
+/* .tableAndTransactionsContainer .flexTableRow{
+    justify-content: space-evenly;
+    margin-left: 5px;
+    /* background-color: red; 
+    width: 110%;
+}  */
 
 
-.tableAndTransactionsContainer .flexTableRow :nth-child(2){
+/* .tableAndTransactionsContainer .flexTableRow :nth-child(2){
     min-width: 100px;
 }
 
@@ -618,9 +638,63 @@ ul,li{
 }
 
 .tableAndTransactionsContainer .notificationLabelGreen, .tableAndTransactionsContainer .notificationLabelOrange{
-    margin-right: 60px;
+    margin-right: 100px;
+    
+} */
+
+
+table{
+    padding-left: 50px;
+    width: 60%;
+    display: flex;
+    font-size: 14px;
+    
+    justify-content: space-between;
 }
 
+#columns{
+    display: flex;
+    width: 80%;
+    font-size: 14px;
+    margin-left: 5px;
+    color: #6a6a6a;
+    
+}
+
+tr{
+    margin: 0;
+}
+
+td{
+    font-size: 12px;
+    width: 120px;
+}
+
+th:nth-child(1), td:nth-child(1){
+    margin-right: 15px;
+}
+
+th:nth-child(2){
+    margin-right: 150px;
+}
+
+td:nth-child(2){
+    margin-right: 150px;
+    margin-left: -90px;
+}
+
+th:nth-child(3){
+    margin-right: 80px;
+}
+
+td:nth-child(3){
+    margin-right: 80px;
+    margin-left: -50px;
+}
+
+td:nth-child(4){
+    margin-left: -60px;
+}
 
 
 
