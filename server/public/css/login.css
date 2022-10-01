@@ -60,14 +60,12 @@ input::placeholder{
 }
 
 input:focus{
-  outline: 2px solid  rgb(0, 140, 122);;
+  outline: 2px solid  rgb(0, 181, 157);;
 }
 
 input::selection {
    background:#dcdcdc;
   }
-
-
 
 label{
   font-size: 16px;
