@@ -602,6 +602,7 @@ ul,li{
 
 
 #transactionsGraph{
+    margin-top: 15px;
     width: 40%;
     height: 100%;
     margin-right: 100px;
