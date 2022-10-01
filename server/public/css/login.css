@@ -1,0 +1,70 @@
+:root{
+    --body-bg:rgb(243,243,244);
+    --navbar-bg : rgb(47,64,80);
+    --navbar-bg-activated:rgb(34, 49, 62);
+    --navbar-maintext:rgb(222, 225, 231);
+    --navbar-subtext:rgb(142, 161, 176);
+    --notification-blue:rgb(28,132,198);
+    --notification-lightblue:rgb(235, 235, 235);
+}
+
+body{
+    background-color: var(--notification-maintext);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+  margin-top: 15px;
+  position: relative;
+  left: 0;
+}
+
+  form{
+    align-self: flex-start;
+    border: 2px #8bb8ff solid;
+    width: 50%;
+  }
+
+  input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #8bb8ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+  }
+  
+
+ 
+  
+ 
