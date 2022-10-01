@@ -596,73 +596,38 @@ ul,li{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
 }
 
 
-
 #transactionsGraph{
-    width: 450px;
+    width: 40%;
+    height: 100%;
     margin-right: 100px;
-    object-fit: contain;
+    object-fit: cover;
 }
-
-
-/* .tableAndTransactionsContainer .flexTable{
-    align-items: center;
-    justify-content: space-around;
-    
-} */
-
-/* .tableAndTransactionsContainer .flexTableColumns{
-    justify-content: space-around;
-    margin-left: 0px;
-}
-
-/* .tableAndTransactionsContainer .flexTableRow{
-    justify-content: space-evenly;
-    margin-left: 5px;
-    /* background-color: red; 
-    width: 110%;
-}  */
-
-
-/* .tableAndTransactionsContainer .flexTableRow :nth-child(2){
-    min-width: 100px;
-}
-
-.tableAndTransactionsContainer .flexTableRow :nth-child(3){
-    min-width: 70px;
-}
-
-.tableAndTransactionsContainer .notificationLabelGreen, .tableAndTransactionsContainer .notificationLabelOrange{
-    margin-right: 100px;
-    
-} */
 
 
 table{
-    padding-left: 50px;
+    padding-left: 20px;
     width: 60%;
     display: flex;
     font-size: 14px;
-    
     justify-content: space-between;
 }
 
 #columns{
+    margin-top: 15px;
     display: flex;
-    width: 80%;
+    width: 60%;
     font-size: 14px;
     margin-left: 5px;
     color: #6a6a6a;
-    
 }
 
 tr{
-    margin: 0;
+    margin: -5;
 }
 
 td{
@@ -675,11 +640,11 @@ th:nth-child(1), td:nth-child(1){
 }
 
 th:nth-child(2){
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 td:nth-child(2){
-    margin-right: 150px;
+    margin-right: 100px;
     margin-left: -90px;
 }
 
