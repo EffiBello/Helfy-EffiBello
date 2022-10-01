@@ -2,69 +2,100 @@
     --body-bg:rgb(243,243,244);
     --navbar-bg : rgb(47,64,80);
     --navbar-bg-activated:rgb(34, 49, 62);
-    --navbar-maintext:rgb(222, 225, 231);
-    --navbar-subtext:rgb(142, 161, 176);
+    --navbar-maintext:rgb(206, 210, 218);
+    --navbar-subtext:rgb(131, 140, 146);
     --notification-blue:rgb(28,132,198);
-    --notification-lightblue:rgb(235, 235, 235);
+    --notification-green:rgb(5, 209, 182);
 }
 
 body{
-    background-color: var(--notification-maintext);
+    background-image: linear-gradient(-90deg,rgb(26,179,148),rgb(35,198,200));
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
 }
+
+form{
+  margin: 100px auto 0 auto;
+  width: 40%;
+}
+
+.titleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 20px;
+}
+
+.title{
+  color: #3e3e3e;
+  font-weight: 700;
+  font-size:32px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  align-self: center;
+  box-shadow: 0px 0px 10px rgb(132, 131, 131);
+}
+
+input{
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(240,240,240);
+  margin: 10px 0px 10px 0px;
+  color: rgb(0, 140, 122);
+  font-weight: 500;
+  padding:15px ;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+input::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  color:rgb(171, 171, 171);
+}
+
+input:focus{
+  outline: 2px solid  rgb(0, 140, 122);;
+}
+
+input::selection {
+   background:#dcdcdc;
+  }
+
+
 
 label{
-  margin-top: 15px;
+  font-size: 16px;
+  color: #888888;
   position: relative;
-  left: 0;
 }
 
-  form{
-    align-self: flex-start;
-    border: 2px #8bb8ff solid;
-    width: 50%;
-  }
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  align-self: center;
+  width: 60%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
 
-  input[type=text], input[type=password] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: #8bb8ff;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    font-size: 16px;
-    font-weight: 550;
-    border: none;
-    cursor: pointer;
-    width: 25%;
-  }
-  
-  /* Add a hover effect for buttons */
-  button:hover {
-    opacity: 0.8;
-  }
-  
+button{
+  cursor: pointer;
+  width: 50%;
+  padding: 15px;
+  border-radius: 100px;
+  margin-top: 20px;
+  align-self: center;
+  font-size: 18px;
+  border: none;
+  color: white;
+  font-weight: 550;
+  background-color: var(--notification-green);
+}
 
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-  }
-  
-
- 
-  
- 

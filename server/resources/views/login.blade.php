@@ -12,11 +12,19 @@
     <form action="/login" method="post">
       @csrf
         <div class="container">
-          <label for="username">Username</label>
-          <input type="text" placeholder="Enter Username" name="username" required>
-      
-          <label for="password">Password</label>
-          <input type="password" placeholder="Enter Password" name="password" required>
+          <div class="titleContainer">
+            <h1 class="title">Log in</h1>
+          </div>
+
+          <div class="inputContainer">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+          </div>
+          
+          <div class="inputContainer">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+          </div>
       
           <button type="submit">Login</button>
           
