@@ -28,29 +28,29 @@ Route::get('/login', function () {
 });
 
 Route::post('/login', function (Request $request) {
-    $username = DB::select("call getUser('".$request->input('username')."')");
+    $username = DB::select("call getUser('".$request->input('username')."')"); //get the user with the getUser procedure.
                 
     if ($username == []){//User doesnt exist -> 401
         return response(['message'=>'Wrong username or password.','status'=>'401'],401);
-    } 
-        
+    }
+
     else{
-        if ($username[0]->{'password'} == $request->input('password')){
-            return redirect('/dashboard'); //login Success
+        if ($username[0]->{'password'} == $request->input('password')){ // without hashing for simplicity.
+           
+            return response(['message'=>'Logged in','status'=>'200'],200); //login Success -> 200
         }
-            
         else  //password doesn't match -> 401
             return response(['message'=>'Wrong username or password.','status'=>'401'],401);
     }
 });
 
 Route::get('/messages', function () {
-    $messages = DB::select('call getMessages()');
+    $messages = DB::select('call getMessages()'); //get messages with getMessages procedure
     return $messages;
 });
 
 Route::get('/dashboard', function () {
-    $messages = DB::select('select * from messages');
+    $messages = DB::select('call getMessages()'); 
     return view('dashboard',['messages' => $messages]);
 });
 

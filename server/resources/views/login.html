@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Log-in</title>
+</head>
+<body>
+    
+    <form name="form" id="form">
+        <div class="container">
+          <div class="titleContainer">
+            <h1 class="title">Log in</h1>
+          </div>
+
+          <div class="inputContainer">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+          </div>
+          
+          <div class="inputContainer">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+          </div>
+      
+          <button type="submit">Login</button>         
+        </div>
+        <script> 
+          $("button").click(function(e) {
+              e.preventDefault();
+              $.ajax({
+                  type: "POST",
+                  url: "/login",
+                  dataType : 'json',
+                  contentType: "application/json",
+                  data : JSON.stringify({"username":$("#form").serializeArray()[0].value, "password":$("#form").serializeArray()[1].value}),
+                  success: function(result) {
+                    window.location = '/dashboard'
+                  },
+                  error: function(result) {
+                    alert(result.responseJSON.message);
+                  }
+            });
+          });
+        </script>
+</body>
+</html>
