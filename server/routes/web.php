@@ -28,9 +28,8 @@ Route::get('/login', function () {
 });
 
 Route::post('/login', function (Request $request) {
-    $username = DB::select('select * from users where username = "'.
-                $request->input('username').'"');
-    
+    $username = DB::select("call getUser('".$request->input('username')."')");
+                
     if ($username == []){//User doesnt exist -> 401
         return response(['message'=>'Wrong username or password.','status'=>'401'],401);
     } 
@@ -46,7 +45,7 @@ Route::post('/login', function (Request $request) {
 });
 
 Route::get('/messages', function () {
-    $messages = DB::select('select * from messages');
+    $messages = DB::select('call getMessages()');
     return $messages;
 });
 
