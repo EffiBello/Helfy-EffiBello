@@ -21,14 +21,11 @@ body{
     flex-direction: column;
 }
 
-
 .bodyContainerCols{
     display: flex;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 .sideNav{
     position: absolute;
@@ -103,8 +100,6 @@ ul,li{
     background-color: var(--notification-green);
 }
 
-
-
 .navOption:hover{
     color: var(--notification-green);
     cursor: pointer;
@@ -116,7 +111,6 @@ ul,li{
     padding: 15px;
     width: 100%;
 }
-
                 
 #navOptionIcon{
     font-size: 14px;
@@ -128,7 +122,6 @@ ul,li{
     cursor: pointer;
     margin-right: 20px;
 }
-
 
 .navOptionData li{
     color: var(--navbar-subtext);
@@ -224,7 +217,6 @@ ul,li{
     padding: 15px ;
     font-size: 10px;
     width: 90%;
-    /* background-color: red; */
 }
 
 .footerTitle{
@@ -287,10 +279,8 @@ ul,li{
 }
 
 .scalesContainer{
-    /* background: purple; */
     width: 100%;
     margin-bottom: 15px;
-    
 }
 
 .scale48,.scale60,.scale20{
@@ -345,7 +335,6 @@ ul,li{
     opacity: 0.9;
 }
 
-
 .thirdRowData{
     display: flex;
     flex-direction: row;
@@ -384,7 +373,6 @@ ul,li{
 }
 
 .icon-group i{
-    /* background-color: red; */
     color: #c1c1c1;
     margin-right: 15px;
     font-size: 14px;
@@ -397,7 +385,6 @@ ul,li{
 }
 
 .newMessagesNotificationTitle{
-    /* background-color: red; */
     display: flex;
     align-items: center;
     padding-left: 8px;
@@ -476,7 +463,6 @@ ul,li{
 .flexTableColumns{
     width: 90%;
     align-self: flex-start;
-    /* background-color: red; */
     display: flex;
     justify-content: space-around   ;
     margin-top: 26px;
@@ -499,7 +485,6 @@ ul,li{
     margin-top: 10px;
     margin-left: 10px;
     color: #6a6a6a;
-    /* background-color: red; */
 }
 
 .flexTableRow #tableText,.flexTableRow .footerNumberGreen{
@@ -515,7 +500,6 @@ ul,li{
     font-size: 12px;
     align-items: center;
     width: 50px;
-
 }
 
 .dateContainer i{
@@ -583,7 +567,6 @@ ul,li{
     flex-direction: row;
     justify-content: space-between;
     margin-left: 40px;
-    /* background-color: blue; */
 }
 
 .thirdRowRightSectionContainer{
@@ -659,9 +642,3 @@ td:nth-child(3){
 td:nth-child(4){
     margin-left: -60px;
 }
-
-
-
-
-
-
