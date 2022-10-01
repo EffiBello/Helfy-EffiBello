@@ -32,7 +32,7 @@ Route::post('/login', function (Request $request) {
                 $request->input('username').'"');
     
     if ($username == []){//User doesnt exist -> 401
-        return response(['username'=>$request->input('username'),'message'=>'User does not exist','status'=>'401'],401);
+        return response(['message'=>'Wrong username or password.','status'=>'401'],401);
     } 
         
     else{
@@ -41,7 +41,7 @@ Route::post('/login', function (Request $request) {
         }
             
         else  //password doesn't match -> 401
-            return response(['message'=>'Password does not match','status'=>'401'],401);
+            return response(['message'=>'Wrong username or password.','status'=>'401'],401);
     }
 });
 

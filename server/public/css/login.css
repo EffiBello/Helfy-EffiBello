@@ -97,3 +97,8 @@ button{
   background-color: var(--notification-green);
 }
 
+button:hover{
+ opacity: 0.85;
+}
+
+
