@@ -1,0 +1,13 @@
+Can use git clone https://github.com/EffiBello/Helfy-test.git
+
+- First, please copy the helfy_db-script and paste&run it on your local MySQL workbench in order to create the database,tables,and records.
+- php artisan serve -> command to run the server (the server will connect automaticlly to the db).
+- login & dashboard pages are inside resources/views folder, the assets (images) and css files are inside the public folder.
+- The server logic is inside routes/web.
+- There might be a slight diffrence between the fontawesome icons in the screen1.png because of difference in versions (i tried my best to find them all :)).
+- The helfy_db contains only 1 user -> username: effibello, password:123456!
+
+
+
+For any question, you can call me on 052-3821331 or email me, effibello4@gmail.com 
+Thanks in advanced.
