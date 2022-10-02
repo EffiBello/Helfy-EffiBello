@@ -644,8 +644,8 @@ td:nth-child(4){
 }
 
 
-@media screen and (min-width: 400px) and (max-width: 1025px) {
-   
+
+@media screen and (max-width: 670px) {
     .tableAndTransactionsContainer{
         display: flex;
         flex-direction: column;
@@ -654,7 +654,13 @@ td:nth-child(4){
     }
 
     table{
-        margin-left: -150px;
+        margin-left: -180px;
+        width: 50%;
+        transform: scale(0.75);
+    }
+
+    tr{
+        width: 40px;
     }
 
     #transactionsGraph{
@@ -744,6 +750,113 @@ td:nth-child(4){
     .thirdRowDataContainer{
         width: 100%;
     }
+    
+
+}
+
+@media screen and (min-width: 671px) and (max-width: 1025px) {
+   
+    .tableAndTransactionsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: -450px;
+    }
+
+    table{
+        margin-left: -150px;
+        transform: scale(0.95);
+    }
+
+    #transactionsGraph{
+        margin-top: 55px;
+        align-self: center;
+        margin-left: 50px;
+        width: 70%;
+        
+    }
+    #userProjectListContainer,#todoListContainer{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #userProjectListContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .userProjectAndTodoContainer{
+        flex-direction: column;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    .messageContainer{
+        margin-right: -10px;
+    }
+
+    .firstRowData{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstRowDataContainer:not(:first-child) {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .firstRowDataContainer:first-child {
+        width: 100%;
+    }
+
+    .orderGraphsContainer{
+        flex-direction: column;
+        align-items: center
+    }
+
+    #ordersGraph{
+        width: 95%;
+        object-fit: fill;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .thirdRowData{
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .messageBodyText{
+        max-width: 85%;
+    }
+
+    #messagesContainer{
+        width: 100%;
+    }
+
+    .sideNav{
+        padding-bottom: 250%;
+    }
+
+    .thirdRowRightSectionContainer{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        padding:0;
+    }
+
+    #transactionWorldwideContainer{
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .thirdRowDataContainer{
+        width: 100%;
+    }
+
+   
 }
 
 
@@ -778,11 +891,4 @@ td:nth-child(4){
     .userProjectAndTodoContainer{
         flex-direction: column;
     }
-
-
-
-
-    
-
-
-  }
+}
